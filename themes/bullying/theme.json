@@ -1,0 +1,175 @@
+{
+  "id": "bullying",
+  "name": "霸凌主题",
+  "description": "以校园/职场霸凌受害者的视角，体验被欺凌、孤立与自我保护的生存挑战",
+  "icon": "💢",
+  "stages": [
+    "小学",
+    "初中",
+    "高中",
+    "大学",
+    "职场"
+  ],
+  "attributes": [
+    {
+      "id": "selfWorth",
+      "name": "自我价值",
+      "icon": "💎",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "safety",
+      "name": "安全感",
+      "icon": "🛡️",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "trust",
+      "name": "信任能力",
+      "icon": "🤝",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "resilience",
+      "name": "韧性",
+      "icon": "🦋",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "trauma",
+      "name": "创伤指数",
+      "icon": "🩸",
+      "initial": 0,
+      "deathAt": 100,
+      "reverse": true
+    }
+  ],
+  "roles": [
+    {
+      "id": "self",
+      "name": "自己（受害者）",
+      "icon": "🧑",
+      "description": "正在经历霸凌的你",
+      "stereotype": "无助、内化自我谴责、试图隐藏",
+      "guardian": "selfWorth",
+      "initialStats": {
+        "selfWorth": 35,
+        "safety": 30,
+        "trust": 40,
+        "resilience": 35,
+        "trauma": 50
+      },
+      "isProtagonist": true
+    },
+    {
+      "id": "bully",
+      "name": "霸凌者",
+      "icon": "😈",
+      "description": "主要的施害者",
+      "stereotype": "强势、群体领袖、享受控制感",
+      "guardian": "safety",
+      "initialStats": {
+        "selfWorth": 60,
+        "safety": 55,
+        "trust": 25,
+        "resilience": 45,
+        "trauma": 10
+      }
+    },
+    {
+      "id": "bystander",
+      "name": "旁观者",
+      "icon": "👀",
+      "description": "沉默的大多数",
+      "stereotype": "害怕被牵连、沉默、偶尔的帮助者",
+      "guardian": "trust",
+      "initialStats": {
+        "selfWorth": 45,
+        "safety": 50,
+        "trust": 40,
+        "resilience": 50,
+        "trauma": 20
+      }
+    },
+    {
+      "id": "friend",
+      "name": "支持者",
+      "icon": "💪",
+      "description": "少数的帮助者",
+      "stereotype": "勇敢、可能被牵连、持续的支持",
+      "guardian": "resilience",
+      "initialStats": {
+        "selfWorth": 55,
+        "safety": 50,
+        "trust": 60,
+        "resilience": 55,
+        "trauma": 15
+      }
+    },
+    {
+      "id": "parent",
+      "name": "父母",
+      "icon": "👨‍👩‍👧",
+      "description": "家庭支持",
+      "stereotype": "可能不相信、过度反应、或忽视",
+      "guardian": "selfWorth",
+      "initialStats": {
+        "selfWorth": 40,
+        "safety": 45,
+        "trust": 50,
+        "resilience": 40,
+        "trauma": 30
+      }
+    },
+    {
+      "id": "teacher",
+      "name": "老师/上司",
+      "icon": "👨‍🏫",
+      "description": "权威角色",
+      "stereotype": "可能不作为、怀疑、惩罚双方",
+      "guardian": "safety",
+      "initialStats": {
+        "selfWorth": 35,
+        "safety": 40,
+        "trust": 30,
+        "resilience": 45,
+        "trauma": 25
+      }
+    },
+    {
+      "id": "counselor",
+      "name": "心理辅导师",
+      "icon": "🧠",
+      "description": "专业帮助",
+      "stereotype": "支持、引导、赋能",
+      "guardian": "resilience",
+      "initialStats": {
+        "selfWorth": 50,
+        "safety": 55,
+        "trust": 65,
+        "resilience": 60,
+        "trauma": 10
+      }
+    },
+    {
+      "id": "group",
+      "name": "霸凌群体",
+      "icon": "👥",
+      "description": "帮凶",
+      "stereotype": "追随、起哄、害怕成为下一个",
+      "guardian": "trust",
+      "initialStats": {
+        "selfWorth": 30,
+        "safety": 25,
+        "trust": 20,
+        "resilience": 35,
+        "trauma": 45
+      }
+    }
+  ],
+  "systemPrompt": "你是一个专注于霸凌防治的心理健康教育游戏设计师。请围绕以下核心维度生成题目：\n1. 自我价值 — 自我认同、被认可感\n2. 安全感 — 环境安全、物理和心理安全\n3. 信任能力 — 对他人、对关系的信任\n4. 韧性 — 恢复力、抗压能力\n5. 创伤指数 — PTSD症状、长期心理影响\n\n每个情景需要4个选项，每个选项要说明对不同角色的不同影响。"
+}

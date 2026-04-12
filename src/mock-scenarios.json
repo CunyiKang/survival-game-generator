@@ -1,0 +1,760 @@
+[
+  {
+    "id": "c1",
+    "stage": "童年",
+    "title": "奶奶的偏爱",
+    "description": "你放学回家，看到奶奶把最大最甜的橙子塞给了弟弟，还说女孩子不用吃那么好。弟弟得意地冲你做鬼脸，奶奶假装没看见。",
+    "options": [
+      {
+        "id": "c1_a",
+        "text": "委屈地哭，找妈妈告状",
+        "effects": {
+          "self_selfEsteem": -12,
+          "self_sensitivity": 8,
+          "self_compliance": -5,
+          "self_stress": 5,
+          "father_selfEsteem": -5,
+          "mother_sensitivity": 5,
+          "sibling_selfEsteem": 8
+        }
+      },
+      {
+        "id": "c1_b",
+        "text": "默默接受，但心里暗暗记下",
+        "effects": {
+          "self_selfEsteem": -8,
+          "self_compliance": 10,
+          "self_stress": 5,
+          "father_selfEsteem": 5,
+          "mother_sensitivity": -5,
+          "sibling_selfEsteem": 3
+        }
+      },
+      {
+        "id": "c1_c",
+        "text": "大声抗议：我也是奶奶的孙女！",
+        "effects": {
+          "self_selfEsteem": 8,
+          "self_sensitivity": -5,
+          "self_compliance": -15,
+          "self_stress": 12,
+          "father_selfEsteem": -10,
+          "sibling_selfEsteem": -8
+        }
+      },
+      {
+        "id": "c1_d",
+        "text": "假装不在意，偷偷自己拿一个吃",
+        "effects": {
+          "self_selfEsteem": -3,
+          "self_social": -5,
+          "self_compliance": -8,
+          "self_stress": 3,
+          "sibling_selfEsteem": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "c2",
+    "stage": "童年",
+    "title": "班长的两难",
+    "description": "你是班长，老师让你登记上课说话的同学。你明明看到好朋友也在说话，但其他同学说如果好朋友受罚就不跟你玩了。",
+    "options": [
+      {
+        "id": "c2_a",
+        "text": "如实记录，好朋友也要一视同仁",
+        "effects": {
+          "self_selfEsteem": 15,
+          "self_social": -12,
+          "self_compliance": -5,
+          "friendSame_selfEsteem": -15,
+          "friendSame_social": -10,
+          "teacher_selfEsteem": 12
+        }
+      },
+      {
+        "id": "c2_b",
+        "text": "放好友一马，只记其他说话的人",
+        "effects": {
+          "self_selfEsteem": -8,
+          "self_social": 10,
+          "self_compliance": 8,
+          "friendSame_social": 15,
+          "teacher_selfEsteem": -12
+        }
+      },
+      {
+        "id": "c2_c",
+        "text": "告诉老师，请求换一个人来登记",
+        "effects": {
+          "self_selfEsteem": 5,
+          "self_sensitivity": 8,
+          "self_social": -5,
+          "self_stress": 10,
+          "teacher_selfEsteem": 8
+        }
+      },
+      {
+        "id": "c2_d",
+        "text": "假装自己也在认真听课，没看见",
+        "effects": {
+          "self_selfEsteem": -12,
+          "self_sensitivity": -8,
+          "self_compliance": 5,
+          "self_stress": 8,
+          "friendSame_social": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "c3",
+    "stage": "童年",
+    "title": "兴趣班的选择",
+    "description": "妈妈给你报了奥数班，但你其实喜欢画画。每次奥数作业都很痛苦，画画课却让你开心。期末汇演，奥数和画画班都有表演机会。",
+    "options": [
+      {
+        "id": "c3_a",
+        "text": "坚持画画，告诉妈妈自己的真实想法",
+        "effects": {
+          "self_selfEsteem": 15,
+          "self_sensitivity": 10,
+          "self_compliance": -15,
+          "self_stress": -10,
+          "mother_selfEsteem": -10,
+          "mother_sensitivity": -5
+        }
+      },
+      {
+        "id": "c3_b",
+        "text": "两个都参加，累一点但不让妈妈失望",
+        "effects": {
+          "self_selfEsteem": -5,
+          "self_sensitivity": -8,
+          "self_compliance": 15,
+          "self_stress": 20,
+          "mother_selfEsteem": 10
+        }
+      },
+      {
+        "id": "c3_c",
+        "text": "放弃画画，专注奥数，争取好成绩",
+        "effects": {
+          "self_selfEsteem": 5,
+          "self_sensitivity": -15,
+          "self_compliance": 12,
+          "self_stress": 8,
+          "mother_selfEsteem": 8
+        }
+      },
+      {
+        "id": "c3_d",
+        "text": "消极抵抗，作业乱写，假装很喜欢奥数",
+        "effects": {
+          "self_selfEsteem": -10,
+          "self_sensitivity": -10,
+          "self_compliance": -8,
+          "self_stress": 15,
+          "mother_selfEsteem": -12
+        }
+      }
+    ]
+  },
+  {
+    "id": "y1",
+    "stage": "少年",
+    "title": "公交车上的遭遇",
+    "description": "放学坐公交回家，旁边一个中年男人总是有意无意地碰你的手臂。你往旁边挪，他也跟着挪。车上的大人似乎都没注意到。",
+    "options": [
+      {
+        "id": "y1_a",
+        "text": "大声喊你干什么！并立刻下车",
+        "effects": {
+          "self_selfEsteem": 12,
+          "self_sensitivity": 10,
+          "self_social": -5,
+          "self_stress": 8,
+          "mother_sensitivity": 15,
+          "friendSame_social": 8
+        }
+      },
+      {
+        "id": "y1_b",
+        "text": "默默换到其他座位，远离那个人",
+        "effects": {
+          "self_selfEsteem": -8,
+          "self_sensitivity": -5,
+          "self_social": -3,
+          "self_stress": 15,
+          "mother_sensitivity": 5
+        }
+      },
+      {
+        "id": "y1_c",
+        "text": "拿起手机假装打电话，让父母来接",
+        "effects": {
+          "self_selfEsteem": 5,
+          "self_sensitivity": 5,
+          "self_social": 3,
+          "self_stress": 10,
+          "mother_sensitivity": 12
+        }
+      },
+      {
+        "id": "y1_d",
+        "text": "忍着不适，到站立刻下车",
+        "effects": {
+          "self_selfEsteem": -15,
+          "self_sensitivity": -8,
+          "self_stress": 25,
+          "self_compliance": 10,
+          "mother_sensitivity": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": "y2",
+    "stage": "少年",
+    "title": "班群的秘密",
+    "description": "你无意中看到班群的聊天记录，发现同学们在背后议论你的外貌，给你起了很难听的绰号。你最好的朋友也在群里，但没有为你说话。",
+    "options": [
+      {
+        "id": "y2_a",
+        "text": "截图保存，直接质问那个朋友",
+        "effects": {
+          "self_selfEsteem": 8,
+          "self_sensitivity": 12,
+          "self_social": -10,
+          "self_stress": 20,
+          "friendSame_selfEsteem": -15,
+          "friendSame_social": -15
+        }
+      },
+      {
+        "id": "y2_b",
+        "text": "假装没看见，但开始疏远那个圈子",
+        "effects": {
+          "self_selfEsteem": -8,
+          "self_social": -12,
+          "self_sensitivity": -8,
+          "self_stress": 15,
+          "friendSame_social": -10
+        }
+      },
+      {
+        "id": "y2_c",
+        "text": "找老师或家长反映情况",
+        "effects": {
+          "self_selfEsteem": 3,
+          "self_social": -15,
+          "self_compliance": 12,
+          "self_stress": 10,
+          "teacher_selfEsteem": 5,
+          "mother_sensitivity": 10
+        }
+      },
+      {
+        "id": "y2_d",
+        "text": "自我反省，是不是自己真的有问题",
+        "effects": {
+          "self_selfEsteem": -20,
+          "self_sensitivity": 5,
+          "self_compliance": -5,
+          "self_stress": 25,
+          "friendSame_selfEsteem": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "y3",
+    "stage": "少年",
+    "title": "学霸的孤独",
+    "description": "你成绩很好，但最近感觉压力很大。班主任在班会上公开表扬你，说你是全班的榜样，要大家向你学习。同学们看你的眼神变了。",
+    "options": [
+      {
+        "id": "y3_a",
+        "text": "私下找老师，请求不要再公开表扬",
+        "effects": {
+          "self_selfEsteem": 8,
+          "self_sensitivity": 8,
+          "self_compliance": -8,
+          "self_stress": -10,
+          "teacher_selfEsteem": -5
+        }
+      },
+      {
+        "id": "y3_b",
+        "text": "考差一点，让大家觉得你没那么高冷",
+        "effects": {
+          "self_selfEsteem": -15,
+          "self_sensitivity": -5,
+          "self_social": 8,
+          "self_compliance": -12,
+          "self_stress": 15
+        }
+      },
+      {
+        "id": "y3_c",
+        "text": "主动帮助同学，用行动证明自己",
+        "effects": {
+          "self_selfEsteem": 10,
+          "self_social": 12,
+          "self_compliance": 8,
+          "self_stress": 5,
+          "friendSame_social": 10
+        }
+      },
+      {
+        "id": "y3_d",
+        "text": "默默承受，继续保持成绩",
+        "effects": {
+          "self_selfEsteem": 5,
+          "self_social": -8,
+          "self_compliance": 10,
+          "self_stress": 20,
+          "teacher_selfEsteem": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": "a1",
+    "stage": "青年",
+    "title": "室友的秘密",
+    "description": "你发现室友偷偷用你的化妆品，用你的毛巾。室友平时对你不错，但这些行为让你很不舒服。质问可能会伤感情，不说你又忍不了。",
+    "options": [
+      {
+        "id": "a1_a",
+        "text": "直接沟通，温和但坚定地表达不满",
+        "effects": {
+          "self_selfEsteem": 15,
+          "self_social": -3,
+          "self_compliance": -5,
+          "self_stress": -15,
+          "friendSame_selfEsteem": -8,
+          "friendSame_social": -5
+        }
+      },
+      {
+        "id": "a1_b",
+        "text": "把东西藏起来，让她自己发现不对",
+        "effects": {
+          "self_selfEsteem": -5,
+          "self_social": 5,
+          "self_sensitivity": -3,
+          "self_stress": 8,
+          "friendSame_social": 3
+        }
+      },
+      {
+        "id": "a1_c",
+        "text": "忍了算了，反正也不是什么大事",
+        "effects": {
+          "self_selfEsteem": -15,
+          "self_compliance": 15,
+          "self_sensitivity": -8,
+          "self_stress": 20,
+          "friendSame_social": 5
+        }
+      },
+      {
+        "id": "a1_d",
+        "text": "向辅导员反映，要求换宿舍",
+        "effects": {
+          "self_selfEsteem": 8,
+          "self_social": -15,
+          "self_compliance": -10,
+          "self_stress": 12,
+          "teacher_selfEsteem": -8
+        }
+      }
+    ]
+  },
+  {
+    "id": "a2",
+    "stage": "青年",
+    "title": "实习的代价",
+    "description": "你找到一份不错的实习，但上司总是下班后找你单独指导，言语中有暗示。你很需要这份实习经历，但每次收到消息都很害怕。",
+    "options": [
+      {
+        "id": "a2_a",
+        "text": "收集证据，直接辞职并向公司举报",
+        "effects": {
+          "self_selfEsteem": 20,
+          "self_social": -5,
+          "self_sensitivity": 10,
+          "self_stress": 15,
+          "father_selfEsteem": -8,
+          "colleague_selfEsteem": 5
+        }
+      },
+      {
+        "id": "a2_b",
+        "text": "找借口推脱，避免单独相处",
+        "effects": {
+          "self_selfEsteem": -5,
+          "self_sensitivity": -5,
+          "self_compliance": 5,
+          "self_stress": 20,
+          "father_selfEsteem": -5
+        }
+      },
+      {
+        "id": "a2_c",
+        "text": "向家人朋友求助，一起想办法",
+        "effects": {
+          "self_selfEsteem": 8,
+          "self_social": 15,
+          "self_sensitivity": 8,
+          "self_stress": -10,
+          "mother_sensitivity": 12,
+          "friendSame_social": 10
+        }
+      },
+      {
+        "id": "a2_d",
+        "text": "为了转正机会，默默忍受",
+        "effects": {
+          "self_selfEsteem": -25,
+          "self_sensitivity": -15,
+          "self_compliance": 20,
+          "self_stress": 35,
+          "father_selfEsteem": -3
+        }
+      }
+    ]
+  },
+  {
+    "id": "a3",
+    "stage": "青年",
+    "title": "考研还是工作",
+    "description": "大四了，父母希望你考研镀金，说学历高才能嫁得好。你自己想毕业后直接工作，用能力证明自己。亲戚们也在饭桌上关心你的前途。",
+    "options": [
+      {
+        "id": "a3_a",
+        "text": "坚持自己的想法，直接找工作",
+        "effects": {
+          "self_selfEsteem": 20,
+          "self_social": -5,
+          "self_compliance": -20,
+          "self_stress": 15,
+          "father_selfEsteem": -15,
+          "mother_sensitivity": -10,
+          "relative_selfEsteem": -12
+        }
+      },
+      {
+        "id": "a3_b",
+        "text": "妥协考研，但心里很不情愿",
+        "effects": {
+          "self_selfEsteem": -10,
+          "self_compliance": 20,
+          "self_sensitivity": -8,
+          "self_stress": 25,
+          "father_selfEsteem": 15,
+          "mother_sensitivity": 10
+        }
+      },
+      {
+        "id": "a3_c",
+        "text": "坦诚沟通，表达自己的真实想法和规划",
+        "effects": {
+          "self_selfEsteem": 15,
+          "self_social": 8,
+          "self_sensitivity": 8,
+          "self_compliance": -5,
+          "self_stress": -5,
+          "father_selfEsteem": 5,
+          "mother_sensitivity": 8
+        }
+      },
+      {
+        "id": "a3_d",
+        "text": "拖延逃避，整天打游戏不去面对",
+        "effects": {
+          "self_selfEsteem": -20,
+          "self_compliance": -15,
+          "self_stress": 30,
+          "father_selfEsteem": -20,
+          "mother_sensitivity": -15
+        }
+      }
+    ]
+  },
+  {
+    "id": "m1",
+    "stage": "中年",
+    "title": "晋升的代价",
+    "description": "你有机会晋升管理层，但需要经常加班出差。丈夫希望你在家多照顾孩子，说女人不要太拼。晋升意味着收入增加，但家庭时间会减少。",
+    "options": [
+      {
+        "id": "m1_a",
+        "text": "争取晋升，和丈夫商量分担家务",
+        "effects": {
+          "self_selfEsteem": 20,
+          "self_social": 8,
+          "self_compliance": -15,
+          "self_stress": 25,
+          "father_selfEsteem": 5,
+          "mother_sensitivity": -10,
+          "friendOpposite_selfEsteem": 5
+        }
+      },
+      {
+        "id": "m1_b",
+        "text": "为了家庭放弃晋升机会",
+        "effects": {
+          "self_selfEsteem": -15,
+          "self_sensitivity": 8,
+          "self_compliance": 20,
+          "self_stress": 15,
+          "father_selfEsteem": 15,
+          "mother_sensitivity": 15
+        }
+      },
+      {
+        "id": "m1_c",
+        "text": "尝试两边平衡，但会很辛苦",
+        "effects": {
+          "self_selfEsteem": 5,
+          "self_social": 5,
+          "self_compliance": 5,
+          "self_stress": 35,
+          "father_selfEsteem": 8,
+          "mother_sensitivity": -5
+        }
+      },
+      {
+        "id": "m1_d",
+        "text": "另找一份能兼顾家庭的工作",
+        "effects": {
+          "self_selfEsteem": 10,
+          "self_social": 10,
+          "self_compliance": 10,
+          "self_stress": -15,
+          "father_selfEsteem": -5,
+          "mother_sensitivity": 8
+        }
+      }
+    ]
+  },
+  {
+    "id": "m2",
+    "stage": "中年",
+    "title": "购房的压力",
+    "description": "你和丈夫存了多年钱，勉强能付首付，但月供会占收入的六成。双方父母都催你们买房，说有自己的房子才算有家。",
+    "options": [
+      {
+        "id": "m2_a",
+        "text": "咬牙买房，有压力才有动力",
+        "effects": {
+          "self_selfEsteem": 10,
+          "self_social": -5,
+          "self_compliance": 15,
+          "self_stress": 35,
+          "father_selfEsteem": 15,
+          "mother_sensitivity": 10
+        }
+      },
+      {
+        "id": "m2_b",
+        "text": "坚持租房，把钱花在自我提升和生活质量上",
+        "effects": {
+          "self_selfEsteem": 15,
+          "self_social": 5,
+          "self_compliance": -15,
+          "self_stress": 15,
+          "father_selfEsteem": -20,
+          "mother_sensitivity": -10,
+          "relative_selfEsteem": -15
+        }
+      },
+      {
+        "id": "m2_c",
+        "text": "等一等，先攒够更多首付再买",
+        "effects": {
+          "self_selfEsteem": 5,
+          "self_compliance": 5,
+          "self_stress": 10,
+          "father_selfEsteem": -5,
+          "relative_selfEsteem": -10
+        }
+      },
+      {
+        "id": "m2_d",
+        "text": "和父母深入沟通，争取理解",
+        "effects": {
+          "self_selfEsteem": 12,
+          "self_social": 12,
+          "self_sensitivity": 8,
+          "self_compliance": -5,
+          "self_stress": -10,
+          "father_selfEsteem": 8,
+          "mother_sensitivity": 12
+        }
+      }
+    ]
+  },
+  {
+    "id": "m3",
+    "stage": "中年",
+    "title": "体检的惊吓",
+    "description": "单位体检发现你某项指标异常，医生建议进一步检查。你很害怕，但又不敢告诉家人，怕他们担心。拖了一周，心里越来越不安。",
+    "options": [
+      {
+        "id": "m3_a",
+        "text": "立刻去复查，积极面对",
+        "effects": {
+          "self_selfEsteem": 15,
+          "self_sensitivity": 10,
+          "self_social": 5,
+          "self_stress": -20,
+          "mother_sensitivity": 10,
+          "friendSame_sensitivity": 8
+        }
+      },
+      {
+        "id": "m3_b",
+        "text": "告诉家人，一起商量对策",
+        "effects": {
+          "self_selfEsteem": 10,
+          "self_social": 15,
+          "self_sensitivity": 12,
+          "self_stress": -15,
+          "father_selfEsteem": 8,
+          "mother_sensitivity": 8
+        }
+      },
+      {
+        "id": "m3_c",
+        "text": "逃避不去想，假装没看到体检报告",
+        "effects": {
+          "self_selfEsteem": -15,
+          "self_sensitivity": -8,
+          "self_compliance": 5,
+          "self_stress": 40,
+          "mother_sensitivity": -10
+        }
+      },
+      {
+        "id": "m3_d",
+        "text": "上网查资料，自己吓自己",
+        "effects": {
+          "self_selfEsteem": -8,
+          "self_sensitivity": -15,
+          "self_social": -3,
+          "self_stress": 35,
+          "friendSame_sensitivity": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": "e1",
+    "stage": "老年",
+    "title": "子女的安排",
+    "description": "子女要把你接到城里住，说老家的医疗条件不好。但你习惯了老邻居老环境，在城里感到孤独和陌生。子女是好意，但你很压抑。",
+    "options": [
+      {
+        "id": "e1_a",
+        "text": "坦诚告诉子女自己的真实感受",
+        "effects": {
+          "self_selfEsteem": 15,
+          "self_sensitivity": 10,
+          "self_social": 8,
+          "self_stress": -20,
+          "sibling_selfEsteem": 5,
+          "friendSame_social": 5
+        }
+      },
+      {
+        "id": "e1_b",
+        "text": "勉强配合，不想给子女添麻烦",
+        "effects": {
+          "self_selfEsteem": -15,
+          "self_sensitivity": -8,
+          "self_compliance": 20,
+          "self_stress": 25,
+          "sibling_selfEsteem": 10
+        }
+      },
+      {
+        "id": "e1_c",
+        "text": "在城里住一段时间，也试着结交新朋友",
+        "effects": {
+          "self_selfEsteem": 10,
+          "self_social": 15,
+          "self_compliance": 8,
+          "self_stress": -5,
+          "sibling_selfEsteem": 8
+        }
+      },
+      {
+        "id": "e1_d",
+        "text": "坚持回老家，哪怕医疗条件差一些",
+        "effects": {
+          "self_selfEsteem": 20,
+          "self_compliance": -20,
+          "self_social": 5,
+          "self_stress": -15,
+          "sibling_selfEsteem": -15
+        }
+      }
+    ]
+  },
+  {
+    "id": "e2",
+    "stage": "老年",
+    "title": "广场舞的领地",
+    "description": "你热爱跳广场舞，但舞队里有几个人总是排挤你，说你动作不标准，占了她们的位置。你想去，又怕被孤立。",
+    "options": [
+      {
+        "id": "e2_a",
+        "text": "找舞队组织者沟通，寻求公正对待",
+        "effects": {
+          "self_selfEsteem": 15,
+          "self_social": -5,
+          "self_sensitivity": 5,
+          "self_stress": 10,
+          "friendSame_selfEsteem": -8
+        }
+      },
+      {
+        "id": "e2_b",
+        "text": "换一支舞队，重新开始",
+        "effects": {
+          "self_selfEsteem": 10,
+          "self_social": -10,
+          "self_compliance": 8,
+          "self_stress": 15,
+          "friendSame_social": -5
+        }
+      },
+      {
+        "id": "e2_c",
+        "text": "忍气吞声，少说话多跳舞",
+        "effects": {
+          "self_selfEsteem": -12,
+          "self_compliance": 20,
+          "self_sensitivity": -10,
+          "self_stress": 20,
+          "friendSame_social": 10
+        }
+      },
+      {
+        "id": "e2_d",
+        "text": "在家自己练，开发自己的小圈子",
+        "effects": {
+          "self_selfEsteem": 12,
+          "self_social": -8,
+          "self_sensitivity": 8,
+          "self_stress": -10,
+          "friendSame_social": -10
+        }
+      }
+    ]
+  }
+]

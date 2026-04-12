@@ -1,0 +1,175 @@
+{
+  "id": "general",
+  "name": "原版-女性困境",
+  "description": "还原《李智慧生存游戏》原版题目，涵盖女性在不同人生阶段面临的社会困境与两难抉择",
+  "icon": "🌸",
+  "stages": [
+    "童年",
+    "少年",
+    "青年",
+    "中年",
+    "老年"
+  ],
+  "attributes": [
+    {
+      "id": "selfEsteem",
+      "name": "自尊心",
+      "icon": "🪷",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "social",
+      "name": "社交性",
+      "icon": "🤝",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "sensitivity",
+      "name": "感受性",
+      "icon": "💧",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "compliance",
+      "name": "顺应性",
+      "icon": "🌀",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "stress",
+      "name": "压力值",
+      "icon": "⚡",
+      "initial": 0,
+      "deathAt": 100,
+      "reverse": true
+    }
+  ],
+  "roles": [
+    {
+      "id": "self",
+      "name": "李智慧（主角）",
+      "icon": "👩",
+      "description": "游戏主角，经历一生的女性",
+      "stereotype": "善良、坚韧、在传统与现代之间挣扎",
+      "guardian": "selfEsteem",
+      "initialStats": {
+        "selfEsteem": 50,
+        "social": 50,
+        "sensitivity": 50,
+        "compliance": 50,
+        "stress": 0
+      },
+      "isProtagonist": true
+    },
+    {
+      "id": "father",
+      "name": "父亲",
+      "icon": "👨",
+      "description": "传统家庭的权威",
+      "stereotype": "重男轻女、沉默寡言、认为女儿应该服从",
+      "guardian": "compliance",
+      "initialStats": {
+        "selfEsteem": 55,
+        "social": 40,
+        "sensitivity": 35,
+        "compliance": 60,
+        "stress": 15
+      }
+    },
+    {
+      "id": "mother",
+      "name": "母亲",
+      "icon": "👩",
+      "description": "家庭的温暖与压力来源",
+      "stereotype": "传统观念、过度关心、可能强迫服从",
+      "guardian": "sensitivity",
+      "initialStats": {
+        "selfEsteem": 45,
+        "social": 50,
+        "sensitivity": 55,
+        "compliance": 45,
+        "stress": 25
+      }
+    },
+    {
+      "id": "sibling",
+      "name": "弟弟",
+      "icon": "👦",
+      "description": "受偏爱的兄弟",
+      "stereotype": "受宠、自我中心、竞争关系",
+      "guardian": "selfEsteem",
+      "initialStats": {
+        "selfEsteem": 35,
+        "social": 40,
+        "sensitivity": 30,
+        "compliance": 55,
+        "stress": 30
+      }
+    },
+    {
+      "id": "friendSame",
+      "name": "同性朋友",
+      "icon": "💑",
+      "description": "闺蜜",
+      "stereotype": "理解支持、分享秘密、可能给出不建议",
+      "guardian": "social",
+      "initialStats": {
+        "selfEsteem": 50,
+        "social": 55,
+        "sensitivity": 50,
+        "compliance": 35,
+        "stress": 20
+      }
+    },
+    {
+      "id": "friendOpposite",
+      "name": "异性朋友",
+      "icon": "💕",
+      "description": "可能的恋爱对象",
+      "stereotype": "追求者、关心但可能占有欲强、情感依赖",
+      "guardian": "sensitivity",
+      "initialStats": {
+        "selfEsteem": 55,
+        "social": 45,
+        "sensitivity": 50,
+        "compliance": 40,
+        "stress": 25
+      }
+    },
+    {
+      "id": "teacher",
+      "name": "老师",
+      "icon": "👨‍🏫",
+      "description": "权威与指导者",
+      "stereotype": "成绩导向、性别偏见、可能的帮助者",
+      "guardian": "compliance",
+      "initialStats": {
+        "selfEsteem": 40,
+        "social": 35,
+        "sensitivity": 45,
+        "compliance": 60,
+        "stress": 15
+      }
+    },
+    {
+      "id": "relative",
+      "name": "亲戚",
+      "icon": "👴",
+      "description": "传统价值观的代表",
+      "stereotype": "闲言碎语、催婚催育、比较",
+      "guardian": "selfEsteem",
+      "initialStats": {
+        "selfEsteem": 30,
+        "social": 25,
+        "sensitivity": 40,
+        "compliance": 50,
+        "stress": 35
+      }
+    }
+  ],
+  "systemPrompt": "你是《李智慧生存游戏》的设计者。每个情景需要4个选项，描述女性在传统社会中的困境与抉择。\n\n核心维度：\n1. 自尊心 — 自我价值感、社会认可\n2. 社交性 — 人际关系、社会支持\n3. 感受性 — 情感体验、共情能力\n4. 顺应性 — 适应社会规范的程度\n5. 压力值 — 心理负担、危机风险\n\n每个选项要说明对不同角色的不同影响。"
+}

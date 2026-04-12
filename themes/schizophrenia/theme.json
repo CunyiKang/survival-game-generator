@@ -1,0 +1,175 @@
+{
+  "id": "schizophrenia",
+  "name": "精神分裂主题",
+  "description": "以精神分裂症患者视角，体验幻觉、妄想与现实交织的生存挑战",
+  "icon": "🧠",
+  "stages": [
+    "童年",
+    "少年",
+    "青年",
+    "中年",
+    "老年"
+  ],
+  "attributes": [
+    {
+      "id": "reality",
+      "name": "现实感",
+      "icon": "🎯",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "identity",
+      "name": "自我认同",
+      "icon": "🪞",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "function",
+      "name": "社会功能",
+      "icon": "🏠",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "insight",
+      "name": "疾病觉察",
+      "icon": "💡",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "crisis",
+      "name": "危机指数",
+      "icon": "🔥",
+      "initial": 0,
+      "deathAt": 100,
+      "reverse": true
+    }
+  ],
+  "roles": [
+    {
+      "id": "self",
+      "name": "自己（患者）",
+      "icon": "🧑",
+      "description": "正在与幻觉和妄想斗争的你",
+      "stereotype": "恐惧、困惑、努力分清现实与幻觉",
+      "guardian": "reality",
+      "initialStats": {
+        "reality": 40,
+        "identity": 45,
+        "function": 40,
+        "insight": 35,
+        "crisis": 45
+      },
+      "isProtagonist": true
+    },
+    {
+      "id": "father",
+      "name": "父亲",
+      "icon": "👨",
+      "description": "家族权威的象征",
+      "stereotype": "否认病情、认为是走火入魔、相信可以治好",
+      "guardian": "function",
+      "initialStats": {
+        "reality": 50,
+        "identity": 40,
+        "function": 45,
+        "insight": 30,
+        "crisis": 35
+      }
+    },
+    {
+      "id": "mother",
+      "name": "母亲",
+      "icon": "👩",
+      "description": "主要的照顾者",
+      "stereotype": "过度保护、焦虑、自责、寻求各种偏方",
+      "guardian": "identity",
+      "initialStats": {
+        "reality": 45,
+        "identity": 55,
+        "function": 35,
+        "insight": 40,
+        "crisis": 50
+      }
+    },
+    {
+      "id": "sibling",
+      "name": "兄弟姐妹",
+      "icon": "👫",
+      "description": "复杂的家庭关系",
+      "stereotype": "恐惧、疏远、羞耻感、可能的照顾者",
+      "guardian": "reality",
+      "initialStats": {
+        "reality": 35,
+        "identity": 40,
+        "function": 50,
+        "insight": 45,
+        "crisis": 30
+      }
+    },
+    {
+      "id": "psychiatrist",
+      "name": "精神科医生",
+      "icon": "⚕️",
+      "description": "专业的医疗支持",
+      "stereotype": "权威、用药决策、治疗计划、观察者视角",
+      "guardian": "insight",
+      "initialStats": {
+        "reality": 55,
+        "identity": 50,
+        "function": 45,
+        "insight": 65,
+        "crisis": 20
+      }
+    },
+    {
+      "id": "nurse",
+      "name": "护士或社工",
+      "icon": "🏥",
+      "description": "日常照护者",
+      "stereotype": "实际、提醒服药、观察病情变化",
+      "guardian": "function",
+      "initialStats": {
+        "reality": 50,
+        "identity": 45,
+        "function": 55,
+        "insight": 50,
+        "crisis": 25
+      }
+    },
+    {
+      "id": "friend",
+      "name": "朋友",
+      "icon": "👤",
+      "description": "院友或支持小组同伴",
+      "stereotype": "理解你的经历、但可能传递错误信息、互相支持",
+      "guardian": "identity",
+      "initialStats": {
+        "reality": 40,
+        "identity": 55,
+        "function": 40,
+        "insight": 35,
+        "crisis": 40
+      }
+    },
+    {
+      "id": "neighbor",
+      "name": "邻居",
+      "icon": "🏘️",
+      "description": "社区的目光",
+      "stereotype": "闲话、恐惧、奇怪的眼神、可能的帮助者",
+      "guardian": "function",
+      "initialStats": {
+        "reality": 30,
+        "identity": 25,
+        "function": 45,
+        "insight": 20,
+        "crisis": 35
+      }
+    }
+  ],
+  "systemPrompt": "你是一个专注于精神分裂症心理健康教育的游戏设计师。请围绕以下核心维度生成题目：\n1. 现实感 — 分清现实与幻觉和妄想\n2. 自我认同 — 疾病身份的理解与整合\n3. 社会功能 — 工作、社交、日常生活能力\n4. 疾病觉察 — 对自身病情的认知与接受\n5. 危机指数 — 急性发作、自伤风险、住院风险\n\n每个情景需要4个选项，每个选项要说明对不同角色的不同影响。"
+}

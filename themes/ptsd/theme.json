@@ -1,0 +1,90 @@
+{
+  "id": "ptsd",
+  "name": "PTSD 主题",
+  "description": "以 PTSD 患者视角，在创伤记忆与当下生活之间重建自我",
+  "icon": "💔",
+  "stages": ["创伤前", "创伤期", "恢复期", "重建期", "整合期"],
+  "attributes": [
+    { "id": "safety", "name": "安全感", "icon": "🛡️", "initial": 50, "deathAt": 0 },
+    { "id": "trust", "name": "信任感", "icon": "🤝", "initial": 50, "deathAt": 0 },
+    { "id": "identity", "name": "自我认同", "icon": "🪞", "initial": 50, "deathAt": 0 },
+    { "id": "connection", "name": "人际连接", "icon": "💫", "initial": 50, "deathAt": 0 },
+    { "id": "trigger", "name": "触发风险", "icon": "⚡", "initial": 0, "deathAt": 100, "reverse": true }
+  ],
+  "roles": [
+    {
+      "id": "self",
+      "name": "自己（幸存者）",
+      "icon": "🧑",
+      "isProtagonist": true,
+      "description": "正在与 PTSD 共存的你",
+      "stereotype": "警觉、闪回、解离、试图重建生活",
+      "guardian": "identity",
+      "initialStats": { "safety": 25, "trust": 20, "identity": 35, "connection": 30, "trigger": 65 }
+    },
+    {
+      "id": "father",
+      "name": "父亲",
+      "icon": "👨",
+      "description": "家庭权威",
+      "stereotype": "不理解、认为是脆弱、要求你振作",
+      "guardian": "trust",
+      "initialStats": { "safety": 45, "trust": 50, "identity": 40, "connection": 30, "trigger": 25 }
+    },
+    {
+      "id": "mother",
+      "name": "母亲",
+      "icon": "👩",
+      "description": "主要照顾者",
+      "stereotype": "过度担心、焦虑传递、不知道如何帮助",
+      "guardian": "safety",
+      "initialStats": { "safety": 40, "trust": 45, "identity": 35, "connection": 50, "trigger": 35 }
+    },
+    {
+      "id": "therapist",
+      "name": "创伤治疗师",
+      "icon": "🧠",
+      "description": "专业支持",
+      "stereotype": "专业引导、EMDR/认知加工、安全的空间",
+      "guardian": "connection",
+      "initialStats": { "safety": 60, "trust": 65, "identity": 55, "connection": 60, "trigger": 15 }
+    },
+    {
+      "id": "friend",
+      "name": "朋友",
+      "icon": "👤",
+      "description": "支持网络",
+      "stereotype": "关心但不知道说什么、可能无意触发、持续陪伴",
+      "guardian": "trust",
+      "initialStats": { "safety": 50, "trust": 55, "identity": 50, "connection": 55, "trigger": 30 }
+    },
+    {
+      "id": "partner",
+      "name": "伴侣",
+      "icon": "💑",
+      "description": "亲密关系",
+      "stereotype": "亲密触发、照顾疲惫、试图支持但方式不当",
+      "guardian": "identity",
+      "initialStats": { "safety": 45, "trust": 40, "identity": 45, "connection": 50, "trigger": 40 }
+    },
+    {
+      "id": "doctor",
+      "name": "急诊医生",
+      "icon": "⚕️",
+      "description": "最初的治疗者",
+      "stereotype": "当时紧急处理、后续随访缺失、轻描淡写",
+      "guardian": "safety",
+      "initialStats": { "safety": 50, "trust": 35, "identity": 40, "connection": 30, "trigger": 45 }
+    },
+    {
+      "id": "stranger",
+      "name": "陌生人",
+      "icon": "🚶",
+      "description": "社会环境",
+      "stereotype": "无意触发、社交场合的压力、对异常行为的偏见",
+      "guardian": "safety",
+      "initialStats": { "safety": 30, "trust": 25, "identity": 35, "connection": 20, "trigger": 55 }
+    }
+  ],
+  "systemPrompt": "你是一个专注于创伤后应激障碍(PTSD)心理健康教育的游戏设计师。\n\n核心维度：\n1. 安全感 — 身体和心理安全感\n2. 信任感 — 对他人和世界的信任\n3. 自我认同 — 创伤前后身份整合\n4. 人际连接 — 社会支持网络\n5. 触发风险 — 闪回、解离、噩梦风险\n\n旁观者视角特点：效果较小、只能看到表面\n主角视角特点：效果完整、深层痛苦\n\n每个情景需要4个选项，每个选项对不同角色有不同影响。"
+}

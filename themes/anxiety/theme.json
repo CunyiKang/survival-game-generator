@@ -1,0 +1,175 @@
+{
+  "id": "anxiety",
+  "name": "焦虑症主题",
+  "description": "以焦虑症患者视角，体验持续紧张、担忧与恐惧的生存挑战",
+  "icon": "😰",
+  "stages": [
+    "童年",
+    "少年",
+    "青年",
+    "中年",
+    "老年"
+  ],
+  "attributes": [
+    {
+      "id": "calm",
+      "name": "平静度",
+      "icon": "🧘",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "control",
+      "name": "掌控感",
+      "icon": "🎛️",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "social",
+      "name": "社交自信",
+      "icon": "🤝",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "function",
+      "name": "日常功能",
+      "icon": "🏠",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "panic",
+      "name": "恐慌指数",
+      "icon": "😱",
+      "initial": 0,
+      "deathAt": 100,
+      "reverse": true
+    }
+  ],
+  "roles": [
+    {
+      "id": "self",
+      "name": "自己（患者）",
+      "icon": "🧑",
+      "description": "被焦虑困扰的你",
+      "stereotype": "过度担忧、灾难化思维、回避风险",
+      "guardian": "calm",
+      "initialStats": {
+        "calm": 30,
+        "control": 35,
+        "social": 40,
+        "function": 45,
+        "panic": 50
+      },
+      "isProtagonist": true
+    },
+    {
+      "id": "father",
+      "name": "父亲",
+      "icon": "👨",
+      "description": "压力来源",
+      "stereotype": "高期待、认为你不够坚强、简单粗暴",
+      "guardian": "control",
+      "initialStats": {
+        "calm": 35,
+        "control": 40,
+        "social": 30,
+        "function": 50,
+        "panic": 40
+      }
+    },
+    {
+      "id": "mother",
+      "name": "母亲",
+      "icon": "👩",
+      "description": "过度保护的照顾者",
+      "stereotype": "焦虑传递、过度保护、放大危险",
+      "guardian": "calm",
+      "initialStats": {
+        "calm": 25,
+        "control": 35,
+        "social": 45,
+        "function": 40,
+        "panic": 55
+      }
+    },
+    {
+      "id": "therapist",
+      "name": "心理咨询师",
+      "icon": "🧠",
+      "description": "专业的帮助者",
+      "stereotype": "支持、认知行为取向、引导暴露练习",
+      "guardian": "control",
+      "initialStats": {
+        "calm": 60,
+        "control": 65,
+        "social": 50,
+        "function": 55,
+        "panic": 15
+      }
+    },
+    {
+      "id": "friend",
+      "name": "朋友",
+      "icon": "👤",
+      "description": "支持网络",
+      "stereotype": "倾听、可能不耐烦、建议放松",
+      "guardian": "social",
+      "initialStats": {
+        "calm": 45,
+        "control": 40,
+        "social": 55,
+        "function": 50,
+        "panic": 25
+      }
+    },
+    {
+      "id": "colleague",
+      "name": "同事",
+      "icon": "💼",
+      "description": "工作场景的角色",
+      "stereotype": "竞争、压力、可能理解或嘲笑",
+      "guardian": "function",
+      "initialStats": {
+        "calm": 35,
+        "control": 45,
+        "social": 40,
+        "function": 50,
+        "panic": 35
+      }
+    },
+    {
+      "id": "partner",
+      "name": "伴侣",
+      "icon": "💑",
+      "description": "亲密关系",
+      "stereotype": "支持但疲惫、怀疑你在装、试图拯救",
+      "guardian": "social",
+      "initialStats": {
+        "calm": 40,
+        "control": 45,
+        "social": 50,
+        "function": 45,
+        "panic": 30
+      }
+    },
+    {
+      "id": "doctor",
+      "name": "医生",
+      "icon": "⚕️",
+      "description": "医疗支持",
+      "stereotype": "诊断、用药、安慰但很忙",
+      "guardian": "function",
+      "initialStats": {
+        "calm": 55,
+        "control": 50,
+        "social": 40,
+        "function": 60,
+        "panic": 20
+      }
+    }
+  ],
+  "systemPrompt": "你是一个专注于焦虑症心理健康教育的游戏设计师。请围绕以下核心维度生成题目：\n1. 平静度 — 放松能力、焦虑波动\n2. 掌控感 — 对生活的控制感、灾难化思维\n3. 社交自信 — 人际场合的舒适度\n4. 日常功能 — 工作学习生活能力\n5. 恐慌指数 — 惊恐发作、躯体症状风险\n\n每个情景需要4个选项，每个选项要说明对不同角色的不同影响。"
+}

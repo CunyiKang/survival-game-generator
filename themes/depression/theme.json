@@ -1,0 +1,175 @@
+{
+  "id": "depression",
+  "name": "抑郁症主题",
+  "description": "以抑郁症患者视角，体验与抑郁共处的生存挑战",
+  "icon": "🩶",
+  "stages": [
+    "童年",
+    "少年",
+    "青年",
+    "中年",
+    "老年"
+  ],
+  "attributes": [
+    {
+      "id": "selfValue",
+      "name": "自我价值",
+      "icon": "🪷",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "connection",
+      "name": "人际连接",
+      "icon": "🤝",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "emotionReg",
+      "name": "情绪调节",
+      "icon": "💧",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "dailyFunc",
+      "name": "日常功能",
+      "icon": "🌀",
+      "initial": 50,
+      "deathAt": 0
+    },
+    {
+      "id": "distress",
+      "name": "痛苦指数",
+      "icon": "⚡",
+      "initial": 0,
+      "deathAt": 100,
+      "reverse": true
+    }
+  ],
+  "roles": [
+    {
+      "id": "self",
+      "name": "自己（患者）",
+      "icon": "🧑",
+      "description": "正在与抑郁共处的你",
+      "stereotype": "敏感、内心挣扎、试图寻求帮助",
+      "guardian": "selfValue",
+      "initialStats": {
+        "selfValue": 50,
+        "connection": 40,
+        "emotionReg": 30,
+        "dailyFunc": 40,
+        "distress": 30
+      },
+      "isProtagonist": true
+    },
+    {
+      "id": "father",
+      "name": "父亲",
+      "icon": "👨",
+      "description": "传统而沉默的男性角色",
+      "stereotype": "不善表达、认为抑郁是矫情、相信意志力能战胜一切",
+      "guardian": "social",
+      "initialStats": {
+        "selfValue": 45,
+        "connection": 35,
+        "emotionReg": 50,
+        "dailyFunc": 55,
+        "distress": 20
+      }
+    },
+    {
+      "id": "mother",
+      "name": "母亲",
+      "icon": "👩",
+      "description": "关爱但方式可能造成压力",
+      "stereotype": "过度关心、焦虑、以爱为名的控制",
+      "guardian": "dailyFunc",
+      "initialStats": {
+        "selfValue": 40,
+        "connection": 60,
+        "emotionReg": 35,
+        "dailyFunc": 45,
+        "distress": 40
+      }
+    },
+    {
+      "id": "sibling",
+      "name": "兄弟姐妹",
+      "icon": "👫",
+      "description": "竞争的同龄人",
+      "stereotype": "不理解、觉得你在装、竞争家庭关注",
+      "guardian": "selfValue",
+      "initialStats": {
+        "selfValue": 35,
+        "connection": 30,
+        "emotionReg": 45,
+        "dailyFunc": 50,
+        "distress": 25
+      }
+    },
+    {
+      "id": "friendSame",
+      "name": "同性朋友",
+      "icon": "💑",
+      "description": "可能理解但也可能远离",
+      "stereotype": "表面关心、逐渐疏远、告诉你振作",
+      "guardian": "connection",
+      "initialStats": {
+        "selfValue": 45,
+        "connection": 50,
+        "emotionReg": 40,
+        "dailyFunc": 45,
+        "distress": 35
+      }
+    },
+    {
+      "id": "friendOpposite",
+      "name": "异性朋友",
+      "icon": "💕",
+      "description": "情感支持的可能来源",
+      "stereotype": "暗恋对象、想帮你但方式笨拙、可能变成依赖",
+      "guardian": "emotionReg",
+      "initialStats": {
+        "selfValue": 50,
+        "connection": 45,
+        "emotionReg": 45,
+        "dailyFunc": 40,
+        "distress": 30
+      }
+    },
+    {
+      "id": "teacher",
+      "name": "老师/导师",
+      "icon": "👨‍🏫",
+      "description": "权威与评判的目光",
+      "stereotype": "关注成绩、认为情绪影响学习、可能的偏见",
+      "guardian": "dailyFunc",
+      "initialStats": {
+        "selfValue": 30,
+        "connection": 25,
+        "emotionReg": 40,
+        "dailyFunc": 60,
+        "distress": 20
+      }
+    },
+    {
+      "id": "relative",
+      "name": "亲戚",
+      "icon": "👴",
+      "description": "传统价值观的代表",
+      "stereotype": "闲言碎语、比较、认为你不够坚强",
+      "guardian": "selfValue",
+      "initialStats": {
+        "selfValue": 25,
+        "connection": 20,
+        "emotionReg": 35,
+        "dailyFunc": 50,
+        "distress": 45
+      }
+    }
+  ],
+  "systemPrompt": "你是一个专注于抑郁症心理健康教育的游戏设计师。请围绕以下核心维度生成题目：\n1. 自我价值感（自尊心）— 羞耻感、无价值感、自我否定\n2. 人际连接（社交性）— 孤立、求助困难、社交退缩\n3. 情绪调节（感受性）— 情感麻木、快感缺失、情绪波动\n4. 日常功能（顺应性）— 起床困难、动力缺乏、逃避行为\n5. 痛苦指数（压力值）— 痛苦累积、自伤风险、危机触发\n\n每个情景需要4个选项，每个选项要说明对不同角色的不同影响。"
+}

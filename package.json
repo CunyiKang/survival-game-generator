@@ -1,0 +1,24 @@
+{
+  "name": "survival-game-generator",
+  "version": "0.1.0",
+  "description": "输入 AI API Key，自动生成任意主题的「生存游戏」绑定制 Web 游戏",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "generate": "node server.js"
+  },
+  "keywords": [
+    "survival-game",
+    "table-top-game",
+    "mental-health",
+    "education",
+    "ai-generator",
+    "li-zhi-hui"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

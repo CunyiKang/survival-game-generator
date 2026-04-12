@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20, 22]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Validate theme JSONs
+        run: |
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const themesDir = path.join(__dirname, '..', '..', 'themes');
+            fs.readdirSync(themesDir).forEach(t => {
+              const cfgPath = path.join(themesDir, t, 'theme.json');
+              if (fs.existsSync(cfgPath)) {
+                try {
+                  JSON.parse(fs.readFileSync(cfgPath, 'utf8'));
+                  console.log('[OK] ' + t);
+                } catch(e) {
+                  console.error('[FAIL] ' + t + ': ' + e.message);
+                  process.exit(1);
+                }
+              }
+            });
+            console.log('All theme JSONs are valid!');
+          "
+
+      - name: Test server startup
+        run: |
+          timeout 5 node server.js &
+          sleep 2
+          curl -s http://localhost:3000/api/themes | node -e "
+            let d=''; process.stdin.on('data',c=>d+=c);
+            process.stdin.on('end',()=>{
+              const r = JSON.parse(d);
+              if(r.success) console.log('API OK, themes:', Object.keys(r.themes).join(', '));
+              else { console.error('API failed'); process.exit(1); }
+            });
+          "
