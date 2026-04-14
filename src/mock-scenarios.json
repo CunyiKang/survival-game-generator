@@ -7,475 +7,475 @@
     "options": [
       {
         "id": "c1_a",
-        "text": "委屈地哭，等妈妈回来告状",
-        "description": "你无法接受这种不公平，选择用情绪表达不满",
-        "effects": { "self_selfEsteem": -8, "self_sensitivity": 10, "self_compliance": -5, "self_stress": 8, "mother_sensitivity": 8, "sibling_selfEsteem": 5 }
+        "text": "委屈地哭了，等妈妈回来告状",
+        "description": "你用情绪表达不满，但"懂事"的标签从此被撕掉",
+        "effects": { "self_selfEsteem": -8, "self_sensitivity": 12, "self_compliance": -8, "self_stress": 12, "mother_sensitivity": 10 }
       },
       {
         "id": "c1_b",
-        "text": "默默吃完，心里记下这件事",
-        "description": "你选择隐忍，但内心开始意识到自己是"次要的"",
-        "effects": { "self_selfEsteem": -5, "self_compliance": 12, "self_stress": 5, "father_selfEsteem": 3, "sibling_selfEsteem": 3 }
+        "text": "默默吃完，心里暗暗记住这件事",
+        "description": "你选择隐忍。奶奶的偏心像一个种子，埋进了心里",
+        "effects": { "self_selfEsteem": -5, "self_compliance": 15, "self_stress": 5, "mother_sensitivity": -5 }
       },
       {
         "id": "c1_c",
-        "text": "平静地说：奶奶，我也想吃鸡腿",
-        "description": "你尝试用理性方式争取自己应得的",
-        "effects": { "self_selfEsteem": 10, "self_compliance": -10, "self_stress": 10, "father_selfEsteem": -5, "sibling_selfEsteem": -5 }
+        "text": "轻声说：奶奶，我也想吃鸡腿",
+        "description": "你尝试温和地表达需求，但被说"这孩子怎么这么馋"",
+        "effects": { "self_selfEsteem": 5, "self_compliance": -12, "self_stress": 8, "mother_sensitivity": -8 }
       },
       {
         "id": "c1_d",
-        "text": "笑着说"我不爱吃鸡腿"",
-        "description": "你用"懂事"来掩饰失落，让所有人都觉得你很好说话",
-        "effects": { "self_selfEsteem": -10, "self_compliance": 15, "self_sensitivity": -5, "self_stress": 3, "mother_sensitivity": 3 }
+        "text": "笑着说"我不爱吃鸡腿，我喜欢啃骨头",
+        "description": "你用懂事来保护自己，也保护了家庭的"和谐"氛围",
+        "effects": { "self_selfEsteem": -10, "self_compliance": 20, "self_sensitivity": -5, "self_stress": 3 }
       }
     ]
   },
   {
     "id": "c2",
     "stage": "童年",
-    "title": "同桌的秘密",
-    "description": "你的同桌小明总是穿旧衣服，有同学嘲笑他家穷。今天你发现他偷偷拿了你的新橡皮，你看到他紧张地藏进书包里。",
+    "title": "班长的选择",
+    "description": "你是班长。数学老师说："帮我把这次考试没及格的同学名字写在这张纸上"。你看了一眼名单，上面有你的好朋友小芳。",
     "options": [
       {
         "id": "c2_a",
-        "text": "假装没看见，第二天悄悄送他一块新橡皮",
-        "description": "你选择保护他的自尊，用善意化解困境",
-        "effects": { "self_selfEsteem": 12, "self_sensitivity": 15, "self_social": 10, "self_compliance": -3, "self_stress": -5 }
+        "text": "把名单交给老师，如实填写",
+        "description": "你遵守了班长的职责，但小芳被老师叫去办公室谈话后，开始疏远你",
+        "effects": { "self_selfEsteem": 5, "self_compliance": 18, "self_sensitivity": -5, "self_stress": 8, "friendSame_sensitivity": -10 }
       },
       {
         "id": "c2_b",
-        "text": "小声说：你要是喜欢我可以送你",
-        "description": "你选择直接但温和的方式",
-        "effects": { "self_selfEsteem": 8, "self_sensitivity": 8, "self_social": 5, "self_stress": 5 }
+        "text": "故意漏写小芳的名字",
+        "description": "你保护了朋友，但数学老师发现了，说你"小小年纪就学会徇私"",
+        "effects": { "self_selfEsteem": 5, "self_compliance": -15, "self_sensitivity": 10, "self_stress": 10, "friendSame_sensitivity": 12 }
       },
       {
         "id": "c2_c",
-        "text": "告诉老师，说有人偷东西",
-        "description": "你选择遵守规则，但可能会伤害一个已经脆弱的人",
-        "effects": { "self_selfEsteem": -5, "self_sensitivity": -10, "self_compliance": 15, "self_stress": 10, "teacher_selfEsteem": 5 }
+        "text": "告诉小芳让她自己去找老师承认",
+        "description": "你把选择权交给了朋友，但小芳觉得你不够义气",
+        "effects": { "self_selfEsteem": 3, "self_compliance": 5, "self_sensitivity": -8, "self_stress": 5, "friendSame_compliance": 10 }
       },
       {
         "id": "c2_d",
-        "text": "当众问他：是不是拿了我的橡皮？",
-        "description": "你选择公开对质，让他面对自己的行为",
-        "effects": { "self_selfEsteem": 3, "self_sensitivity": -8, "self_social": -10, "self_compliance": 5, "self_stress": 8 }
+        "text": "去找老师求情，说小芳最近家里有事",
+        "description": "你用真诚打动了老师，但被说"班长应该公正，不能有私心"",
+        "effects": { "self_selfEsteem": -5, "self_compliance": -8, "self_sensitivity": 15, "self_stress": 8 }
       }
     ]
   },
   {
     "id": "c3",
     "stage": "童年",
-    "title": "想学跆拳道的女孩",
-    "description": "学校开设了跆拳道兴趣班，你特别想报名。但妈妈说：女孩子学什么跆拳道，去学跳舞吧。你已经连续两年被迫学跳舞了。",
+    "title": "舞台上的灯光",
+    "description": "班级联欢会，老师选了6个女生跳集体舞。你被安排在最后一排角落的位置，领舞的是那个长得最好看的女生。你其实跳得比她好，但老师说她更适合站前面。",
     "options": [
       {
         "id": "c3_a",
-        "text": "恳求妈妈：就让我试一次，如果不喜欢我再换",
-        "description": "你尝试争取，但以妥协的姿态",
-        "effects": { "self_selfEsteem": 5, "self_sensitivity": 5, "self_compliance": -5, "self_stress": 8, "mother_sensitivity": -3 }
+        "text": "认真排练，在联欢会上好好表现",
+        "description": "你选择用实力证明自己，即使在角落里也要发光",
+        "effects": { "self_selfEsteem": 10, "self_compliance": 15, "self_stress": 5, "mother_sensitivity": 5 }
       },
       {
         "id": "c3_b",
-        "text": "什么都不说，继续去跳舞班发呆",
-        "description": "你放弃了争取，学会了"听话"",
-        "effects": { "self_selfEsteem": -15, "self_compliance": 20, "self_sensitivity": -8, "self_stress": 10, "mother_sensitivity": 5 }
+        "text": "跟老师说想换人，你不想参加",
+        "description": "你选择了退出，但"不团结"的标签被贴在了你身上",
+        "effects": { "self_selfEsteem": 3, "self_compliance": -18, "self_stress": 8, "self_sensitivity": -5 }
       },
       {
         "id": "c3_c",
-        "text": "用自己的零花钱偷偷报名",
-        "description": "你选择自主行动，但可能引发家庭冲突",
-        "effects": { "self_selfEsteem": 15, "self_compliance": -20, "self_stress": 15, "mother_sensitivity": -10, "father_selfEsteem": -8 }
+        "text": "回家偷偷练习，领舞动作已经能跳得比她更好",
+        "description": "你默默努力，等待一个证明自己的机会",
+        "effects": { "self_selfEsteem": 15, "self_compliance": 5, "self_stress": 10, "self_sensitivity": 8 }
       },
       {
         "id": "c3_d",
-        "text": "找爸爸帮忙说服妈妈",
-        "description": "你寻求盟友，但可能加剧父母之间的矛盾",
-        "effects": { "self_selfEsteem": 8, "self_social": 5, "self_compliance": -8, "self_stress": 5, "father_selfEsteem": 5, "mother_sensitivity": -8 }
+        "text": "告诉妈妈，妈妈去找老师理论",
+        "description": "妈妈替你出头，老师换了位置，但你成了"爱告状"的人",
+        "effects": { "self_selfEsteem": 8, "self_compliance": -12, "self_stress": 12, "mother_sensitivity": -8 }
       }
     ]
   },
   {
     "id": "y1",
     "stage": "少年",
-    "title": "深夜的补习班",
-    "description": "晚上9点，补习班下课。回家路上，一个中年男人跟着你，问你几点了、住在哪里。你加快脚步，他也加快。前面就是一条小胡同，那是回家的必经之路。",
+    "title": "补习班之后",
+    "description": "晚上9点，补习班下课。你走在回家的路上，有个中年男人一直跟着你，问你几点了、住在哪里。前方是一条没有路灯的胡同——这是回家的必经之路。",
     "options": [
       {
         "id": "y1_a",
-        "text": "转身跑回补习班，打电话让父母来接",
-        "description": "你选择安全第一，但也意味着"不能自己回家"",
-        "effects": { "self_selfEsteem": -3, "self_sensitivity": 8, "self_social": -5, "self_stress": 15, "mother_sensitivity": 12, "father_selfEsteem": -5 }
+        "text": "转身跑回补习班，借电话让爸爸来接",
+        "description": "你选择了安全，但爸爸说"你怎么不自己回家，多大了"",
+        "effects": { "self_selfEsteem": -5, "self_sensitivity": 8, "self_stress": 15, "father_selfEsteem": -10, "mother_sensitivity": 15 }
       },
       {
         "id": "y1_b",
-        "text": "跑进旁边亮灯的便利店，假装买东西",
-        "description": "你机警地寻找安全场所",
-        "effects": { "self_selfEsteem": 5, "self_sensitivity": 10, "self_social": 3, "self_stress": 10 }
+        "text": "跑进路边亮灯的便利店，等那个人走远",
+        "description": "你机智地找到了安全场所，等了15分钟后才敢出来",
+        "effects": { "self_selfEsteem": 5, "self_sensitivity": 10, "self_stress": 10 }
       },
       {
         "id": "y1_c",
-        "text": "硬着头皮走进胡同，跑快点就好",
-        "description": "你选择面对恐惧，但风险很高",
-        "effects": { "self_selfEsteem": 8, "self_sensitivity": -5, "self_compliance": 5, "self_stress": 30, "mother_sensitivity": -5 }
+        "text": "硬着头皮走进胡同，快步跑过",
+        "description": "你选择面对恐惧。那个人没有跟进来，但你的心跳很久才平复",
+        "effects": { "self_selfEsteem": 8, "self_sensitivity": -8, "self_stress": 20, "mother_sensitivity": -8 }
       },
       {
         "id": "y1_d",
-        "text": "大声喊"爸爸你来接我啦！"然后跑向一个路人",
-        "description": "你用智慧化解危机",
-        "effects": { "self_selfEsteem": 10, "self_sensitivity": 5, "self_social": 5, "self_stress": 12 }
+        "text": "大声喊"爸爸！"，跑向一对路过的情侣",
+        "description": "你用智慧化解了危机。跟踪者看到有人接应，消失在夜色里",
+        "effects": { "self_selfEsteem": 10, "self_sensitivity": 5, "self_stress": 8, "mother_sensitivity": 10 }
       }
     ]
   },
   {
     "id": "y2",
     "stage": "少年",
-    "title": "闺蜜的秘密聊天群",
-    "description": "你无意中看到闺蜜的手机，发现班里的女生建了一个没有你的群，每天都在讨论你的穿着打扮，给你起了很难听的绰号。最让你难过的是，你最好的朋友也在群里发言。",
+    "title": "闺蜜的秘密群",
+    "description": "你偶然看到闺蜜小美的手机——她把你排除在外的闺蜜群里，正在讨论你的新裙子："土死了""她以为她很漂亮吗""她家不是穷吗怎么买新衣服"。你最信任的朋友，在群里发言说："别说了，被她看到就不好了"。",
     "options": [
       {
         "id": "y2_a",
-        "text": "装作不知道，慢慢疏远那个圈子",
-        "description": "你选择默默退出，保护自己不再受伤害",
-        "effects": { "self_selfEsteem": -10, "self_sensitivity": -5, "self_social": -15, "self_compliance": 5, "self_stress": 20, "friendSame_social": -10 }
+        "text": "当作什么都没看到，慢慢疏远这个圈子",
+        "description": "你选择了沉默离开，但那些话在心里反复回响",
+        "effects": { "self_selfEsteem": -12, "self_sensitivity": -8, "self_social": -15, "self_stress": 18, "friendSame_sensitivity": -5 }
       },
       {
         "id": "y2_b",
-        "text": "私下找最好的朋友谈，问为什么不帮你说句话",
-        "description": "你选择坦诚沟通，但可能失去这段友谊",
-        "effects": { "self_selfEsteem": 8, "self_sensitivity": 10, "self_social": -5, "self_stress": 15, "friendSame_selfEsteem": -15, "friendSame_social": -10 }
+        "text": "私下找小美问清楚，要一个解释",
+        "description": "小美哭着道歉说"只是开玩笑"。你原谅了她，但关系再也回不去了",
+        "effects": { "self_selfEsteem": 8, "self_sensitivity": 5, "self_social": -8, "self_stress": 12, "friendSame_selfEsteem": -15 }
       },
       {
         "id": "y2_c",
-        "text": "在班级群里发：我知道你们在说我什么",
-        "description": "你选择公开反击，但可能让事情更糟",
-        "effects": { "self_selfEsteem": 5, "self_sensitivity": -10, "self_social": -20, "self_compliance": -15, "self_stress": 25 }
+        "text": "截图保存，在班级群里公开质问",
+        "description": "你撕破了脸面。有人说"开不起玩笑"，有人暗暗支持你，但你的名声也毁了",
+        "effects": { "self_selfEsteem": 5, "self_sensitivity": -12, "self_social": -20, "self_compliance": -18, "self_stress": 25 }
       },
       {
         "id": "y2_d",
-        "text": "告诉自己：她们不值得我在意",
-        "description": "你选择自我调节，但内心真的能做到吗？",
-        "effects": { "self_selfEsteem": -5, "self_sensitivity": 5, "self_social": -10, "self_stress": 15 }
+        "text": "告诉班主任，请她帮忙处理",
+        "description": "班主任调解了这件事，但同学们说你是"告状精"",
+        "effects": { "self_selfEsteem": -5, "self_compliance": -5, "self_stress": 15, "self_sensitivity": -5 }
       }
     ]
   },
   {
     "id": "y3",
     "stage": "少年",
-    "title": "老师的"特别关心"",
-    "description": "你数学成绩不好，班主任让你放学后单独留下补课。但最近几次，老师的手总是搭在你肩上，还会问你有没有男朋友。每次离开办公室，你都觉得浑身不舒服。",
+    "title": "班主任的"关心"",
+    "description": "你数学不好，班主任让你放学后留下来单独补课。最近几次，他的手总是搭在你肩上，还问你"有没有男朋友"。每次离开办公室，你都觉得浑身不自在。",
     "options": [
       {
         "id": "y3_a",
-        "text": "以后每次补课都叫上同学一起去",
-        "description": "你选择自我保护，但可能会失去单独辅导的机会",
-        "effects": { "self_selfEsteem": 5, "self_sensitivity": 8, "self_social": 10, "self_compliance": -5, "self_stress": -5 }
+        "text": "以后每次补课都叫一个同学一起去",
+        "description": "你学会了保护自己，但班主任的态度明显变冷淡了",
+        "effects": { "self_selfEsteem": 8, "self_sensitivity": 8, "self_stress": -5, "mother_sensitivity": 8 }
       },
       {
         "id": "y3_b",
-        "text": "告诉父母，说不想再补课了",
-        "description": "你选择寻求帮助，但可能不被理解",
-        "effects": { "self_selfEsteem": 3, "self_sensitivity": 10, "self_social": 5, "self_stress": 10, "mother_sensitivity": 15, "father_selfEsteem": -5 }
+        "text": "告诉妈妈，说不想再补课了",
+        "description": "妈妈去学校了解情况，但老师说你"想多了"",
+        "effects": { "self_selfEsteem": 5, "self_sensitivity": 10, "self_stress": 8, "mother_sensitivity": 18, "father_selfEsteem": -8 }
       },
       {
         "id": "y3_c",
-        "text": "忍受下去，毕竟成绩提高很重要",
-        "description": "你选择牺牲安全感换取成绩",
-        "effects": { "self_selfEsteem": -20, "self_sensitivity": -15, "self_compliance": 15, "self_stress": 35, "teacher_selfEsteem": 5 }
+        "text": "忍受着继续去补课，成绩确实提高了",
+        "description": "你用安全感换来了好成绩，但每次走进那条走廊，心都在发抖",
+        "effects": { "self_selfEsteem": -15, "self_sensitivity": -18, "self_compliance": 20, "self_stress": 30 }
       },
       {
         "id": "y3_d",
-        "text": "找借口说家里有事，不再去补课",
-        "description": "你选择逃避，但数学成绩会更差",
-        "effects": { "self_selfEsteem": -5, "self_compliance": -5, "self_stress": 5, "teacher_selfEsteem": -5 }
+        "text": "找借口不再去补课，数学成绩一落千丈",
+        "description": "你保护了自己，但数学成了你的短板",
+        "effects": { "self_selfEsteem": 5, "self_compliance": -10, "self_stress": 5, "mother_sensitivity": -10 }
       }
     ]
   },
   {
     "id": "a1",
     "stage": "青年",
-    "title": "面试官的"暗示"",
-    "description": "你面试了一家很好的公司，面试官对你的能力很满意。但在结束时，他暗示你可以"多交流"，并加了你微信。晚上他发来消息说可以帮你"通关系"，问你愿不愿意出来"喝一杯"。",
+    "title": "面试官的暗示",
+    "description": "你面试了一家理想的公司，面试官对你的能力很满意。结束时他加了你微信，说"以后多交流"。晚上他发来消息："你的条件很好，我可以帮你通通关系，愿意出来喝一杯吗？"",
     "options": [
       {
         "id": "a1_a",
-        "text": "回复：谢谢您的认可，但我会凭实力争取这个岗位",
-        "description": "你选择保持尊严，但可能失去这个机会",
-        "effects": { "self_selfEsteem": 20, "self_sensitivity": 5, "self_compliance": -15, "self_stress": 15, "father_selfEsteem": -8 }
+        "text": "礼貌回复：谢谢您的认可，我会凭自己的实力争取",
+        "description": "你守住了底线，但这份工作最终给了别人",
+        "effects": { "self_selfEsteem": 18, "self_sensitivity": 5, "self_compliance": -15, "self_stress": 12 }
       },
       {
         "id": "a1_b",
-        "text": "不回复，同时向公司HR举报这个面试官",
-        "description": "你选择维护正义，但风险很大",
-        "effects": { "self_selfEsteem": 15, "self_sensitivity": 8, "self_social": -5, "self_compliance": -10, "self_stress": 20 }
+        "text": "截图保存证据，举报到公司HR",
+        "description": "你选择了反抗，但HR说"没有实证"，事情不了了之",
+        "effects": { "self_selfEsteem": 12, "self_sensitivity": 8, "self_social": -10, "self_stress": 18 }
       },
       {
         "id": "a1_c",
-        "text": "回复：好的，明天见",
-        "description": "你选择妥协，换取一个可能的机会",
-        "effects": { "self_selfEsteem": -25, "self_sensitivity": -20, "self_compliance": 25, "self_stress": 40 }
+        "text": "答应了邀请，心想只是喝杯咖啡而已",
+        "description": "咖啡之后，他开始频繁约你。你得到了这份工作，但失去了什么？",
+        "effects": { "self_selfEsteem": -20, "self_sensitivity": -20, "self_compliance": 25, "self_stress": 35 }
       },
       {
         "id": "a1_d",
-        "text": "截图保存证据，然后拉黑，申请其他公司",
-        "description": "你选择保护自己并保留追责的权利",
-        "effects": { "self_selfEsteem": 12, "self_sensitivity": 5, "self_compliance": -5, "self_stress": 5 }
+        "text": "拉黑这个人，重新投简历找其他工作",
+        "description": "你保护了自己，但错过了这家公司",
+        "effects": { "self_selfEsteem": 15, "self_sensitivity": 5, "self_compliance": -5, "self_stress": 5 }
       }
     ]
   },
   {
     "id": "a2",
     "stage": "青年",
-    "title": "男朋友的"关心"",
-    "description": "你和男朋友感情很好，但他开始查你的手机，问你每时每刻在哪里。他说这是因为太爱你、太在乎你。你的朋友提醒你这可能是不健康的信号。",
+    "title": "男朋友的"爱"",
+    "description": "你谈了一个男朋友，他对你很好，但开始查你的手机，规定你几点回家，禁止你和男同事单独吃饭。他说："因为我太爱你了，不想失去你"。你的朋友说这是控制，不是爱。",
     "options": [
       {
         "id": "a2_a",
-        "text": "和他认真谈谈，表达你需要个人空间",
-        "description": "你选择沟通边界，但可能引发争吵",
-        "effects": { "self_selfEsteem": 12, "self_sensitivity": 10, "self_social": 5, "self_compliance": -10, "self_stress": 10, "friendOpposite_selfEsteem": -10 }
+        "text": "认真和他谈，说你需要信任和个人空间",
+        "description": "他沉默了很久，然后说"如果你连这点都接受不了，是不是不爱我"",
+        "effects": { "self_selfEsteem": 10, "self_sensitivity": 10, "self_social": 5, "self_compliance": -12, "self_stress": 10, "friendOpposite_sensitivity": -12 }
       },
       {
         "id": "a2_b",
-        "text": "觉得朋友多虑了，他只是太爱我",
-        "description": "你选择相信爱情，忽略警告信号",
-        "effects": { "self_selfEsteem": -10, "self_sensitivity": -15, "self_compliance": 15, "self_stress": 5, "friendOpposite_selfEsteem": 10 }
+        "text": "觉得朋友多虑了，他只是太在乎我",
+        "description": "你选择相信爱情，但控制越来越严，你的圈子越来越小",
+        "effects": { "self_selfEsteem": -12, "self_sensitivity": -15, "self_compliance": 18, "self_stress": 8, "friendOpposite_sensitivity": 10 }
       },
       {
         "id": "a2_c",
         "text": "接受他的"关心"，主动报备所有行程",
-        "description": "你选择让他安心，但失去了自我",
-        "effects": { "self_selfEsteem": -20, "self_compliance": 25, "self_sensitivity": -10, "self_stress": 15, "friendOpposite_selfEsteem": 15 }
+        "description": "你让自己活在他的规则里，获得了表面的平静，内心却在慢慢窒息",
+        "effects": { "self_selfEsteem": -20, "self_compliance": 25, "self_stress": 15, "self_social": -18 }
       },
       {
         "id": "a2_d",
-        "text": "重新审视这段关系，必要时选择离开",
-        "description": "你选择优先保护自己",
-        "effects": { "self_selfEsteem": 15, "self_sensitivity": 8, "self_social": 10, "self_compliance": -20, "self_stress": 25, "friendOpposite_selfEsteem": -25 }
+        "text": "分手，即使很痛",
+        "description": "你选择了离开，但那段经历在心底留下了伤疤",
+        "effects": { "self_selfEsteem": 15, "self_sensitivity": 8, "self_social": 8, "self_compliance": -20, "self_stress": 20, "friendOpposite_selfEsteem": -20 }
       }
     ]
   },
   {
     "id": "a3",
     "stage": "青年",
-    "title": "同事的窃窃私语",
-    "description": "你在公司表现很好，刚被提拔为主管。但最近同事们在茶水间看到你就停止聊天。一个关系好的同事偷偷告诉你，有人在传你靠"特殊关系"上位。",
+    "title": "同事的谣言",
+    "description": "你刚被提拔为部门主管。但最近同事们看到你就停止聊天。一个关系好的同事悄悄告诉你："有人在传你是靠关系上位的"。你回头看了看那个总是针对你的男同事。",
     "options": [
       {
         "id": "a3_a",
-        "text": "用更出色的成绩证明自己",
-        "description": "你选择以实力回击谣言",
-        "effects": { "self_selfEsteem": 15, "self_compliance": 10, "self_stress": 20, "self_social": 5 }
+        "text": "用更出色的业绩让他们闭嘴",
+        "description": "你埋头苦干，业绩确实很好，但谣言并没有消失",
+        "effects": { "self_selfEsteem": 15, "self_compliance": 12, "self_stress": 18, "self_social": 3 }
       },
       {
         "id": "a3_b",
-        "text": "找主管反映情况，要求调查造谣者",
-        "description": "你选择维护自己的名誉",
-        "effects": { "self_selfEsteem": 10, "self_sensitivity": 5, "self_social": -10, "self_compliance": -5, "self_stress": 15 }
+        "text": "私下和几个核心同事谈话，了解真相",
+        "description": "你发现谣言来自那个男同事，他一直想升职却没成功",
+        "effects": { "self_selfEsteem": 10, "self_social": 12, "self_stress": 8 }
       },
       {
         "id": "a3_c",
-        "text": "装作不知道，继续和同事友好相处",
-        "description": "你选择忍让，希望谣言自己消失",
-        "effects": { "self_selfEsteem": -10, "self_compliance": 15, "self_sensitivity": -8, "self_stress": 25, "self_social": 5 }
+        "text": "装作不知道，继续正常工作",
+        "description": "你选择无视，但那些窃窃私语每天都在消耗你",
+        "effects": { "self_selfEsteem": -8, "self_compliance": 15, "self_stress": 22, "self_sensitivity": -10 }
       },
       {
         "id": "a3_d",
-        "text": "公开在部门会议上说明晋升过程",
-        "description": "你选择透明化，但可能显得防卫过当",
-        "effects": { "self_selfEsteem": 5, "self_sensitivity": -5, "self_social": -5, "self_compliance": -10, "self_stress": 10 }
+        "text": "在部门会议上公开说明你的晋升过程",
+        "description": "你打破了沉默，但有人觉得你"小题大做，心虚了"",
+        "effects": { "self_selfEsteem": 5, "self_sensitivity": -8, "self_social": -8, "self_compliance": -12, "self_stress": 10 }
       }
     ]
   },
   {
     "id": "m1",
     "stage": "中年",
-    "title": "晋升与家庭",
-    "description": "公司给你一个晋升机会，但需要常驻外地两年。丈夫说：你去了，孩子怎么办？我工作也很忙。婆婆也在电话里"关心"你：女人还是以家庭为重。",
+    "title": "晋升还是孩子",
+    "description": "公司给你一个晋升机会，但要常驻外地两年。丈夫皱眉说："孩子谁管？我工作也忙。"婆婆电话里说："女人家，以家庭为重吧。"你的上司说："这个机会错过就没有了。"",
     "options": [
       {
         "id": "m1_a",
-        "text": "接受晋升，和丈夫商量轮流照顾孩子",
-        "description": "你选择事业发展，但需要家庭配合",
-        "effects": { "self_selfEsteem": 20, "self_sensitivity": -5, "self_social": -10, "self_compliance": -20, "self_stress": 30, "father_selfEsteem": -10, "mother_sensitivity": -15 }
+        "text": "接受晋升，和丈夫商量轮流出差",
+        "description": "你选择了事业，但家庭关系紧张，你总是在愧疚中出差",
+        "effects": { "self_selfEsteem": 20, "self_social": -8, "self_compliance": -18, "self_stress": 28, "father_selfEsteem": -12, "mother_sensitivity": -15 }
       },
       {
         "id": "m1_b",
-        "text": "放弃这次机会，留在本地发展",
-        "description": "你选择家庭，但可能一直遗憾",
-        "effects": { "self_selfEsteem": -15, "self_sensitivity": 10, "self_compliance": 25, "self_stress": 15, "father_selfEsteem": 15, "mother_sensitivity": 15 }
+        "text": "放弃晋升，留在家里",
+        "description": "你选择了家庭，但每次路过公司大楼，心里都会有一阵刺痛",
+        "effects": { "self_selfEsteem": -15, "self_compliance": 25, "self_stress": 12, "father_selfEsteem": 12, "mother_sensitivity": 12 }
       },
       {
         "id": "m1_c",
-        "text": "申请延期，等孩子大一点再考虑外派",
-        "description": "你选择折中方案",
-        "effects": { "self_selfEsteem": 5, "self_compliance": 5, "self_stress": 10, "father_selfEsteem": 5 }
+        "text": "和丈夫深入谈一次，探讨他能否调整工作",
+        "description": "你们第一次认真谈论家庭分工，他开始理解你的处境",
+        "effects": { "self_selfEsteem": 15, "self_sensitivity": 12, "self_social": 10, "self_compliance": -8, "self_stress": 10, "father_selfEsteem": -5 }
       },
       {
         "id": "m1_d",
-        "text": "和丈夫深入沟通，探讨他是否能调整工作",
-        "description": "你选择寻求真正的平等分担",
-        "effects": { "self_selfEsteem": 15, "self_sensitivity": 10, "self_social": 10, "self_compliance": -10, "self_stress": 15, "father_selfEsteem": -5 }
+        "text": "申请延期，等孩子上初中再说",
+        "description": "你选择了折中，但机会不会永远等着你",
+        "effects": { "self_selfEsteem": 3, "self_compliance": 8, "self_stress": 8 }
       }
     ]
   },
   {
     "id": "m2",
     "stage": "中年",
-    "title": "妈妈的诊断书",
-    "description": "妈妈被诊断出早期阿尔茨海默症。医生说需要有人照顾。你的兄弟姐妹都推说工作忙，最后目光都落在你身上——你是女儿，你细心，而且你"工作没那么忙"。",
+    "title": "病床前的抉择",
+    "description": "妈妈得了早期阿尔茨海默症，医生说需要人照顾。兄弟姐妹聚在一起讨论，最后所有人的目光都落在了你身上——"你是女儿，心细"，"你工作没那么忙吧"。",
     "options": [
       {
         "id": "m2_a",
-        "text": "接受这个责任，调整工作时间照顾妈妈",
-        "description": "你选择承担，但可能影响自己的事业和健康",
-        "effects": { "self_selfEsteem": 5, "self_sensitivity": 15, "self_social": 10, "self_compliance": 20, "self_stress": 35, "sibling_selfEsteem": 10 }
+        "text": "承担起照顾妈妈的责任",
+        "description": "你选择了尽孝，但自己的时间和精力被严重消耗",
+        "effects": { "self_selfEsteem": 3, "self_sensitivity": 15, "self_compliance": 20, "self_stress": 30, "sibling_selfEsteem": 8 }
       },
       {
         "id": "m2_b",
-        "text": "和兄弟姐妹开家庭会议，协商分工",
-        "description": "你选择公平分配责任",
-        "effects": { "self_selfEsteem": 12, "self_sensitivity": 8, "self_social": 15, "self_compliance": -10, "self_stress": 10, "sibling_selfEsteem": -15 }
+        "text": "召开家庭会议，商量轮流照顾",
+        "description": "有人同意，有人找借口推脱，但至少不是只有你一个人",
+        "effects": { "self_selfEsteem": 12, "self_social": 12, "self_compliance": -12, "self_stress": 8, "sibling_selfEsteem": -15 }
       },
       {
         "id": "m2_c",
-        "text": "出钱请专业护工，定期探望",
-        "description": "你选择用经济支持替代时间陪伴",
-        "effects": { "self_selfEsteem": 5, "self_compliance": -5, "self_stress": 5, "sibling_selfEsteem": -5, "mother_sensitivity": -10 }
+        "text": "出钱请专业护工，你定期去看望",
+        "description": "你用钱解决了问题，但被亲戚说"有钱就不管妈了"",
+        "effects": { "self_selfEsteem": 5, "self_compliance": -8, "self_stress": 5, "sibling_selfEsteem": -8, "mother_sensitivity": -12 }
       },
       {
         "id": "m2_d",
-        "text": "拒绝单独承担，即使被说不孝",
-        "description": "你选择维护自己的边界",
-        "effects": { "self_selfEsteem": 10, "self_sensitivity": -10, "self_social": -20, "self_compliance": -25, "self_stress": 20, "sibling_selfEsteem": 5 }
+        "text": "拒绝独自承担，哪怕被说不孝",
+        "description": "你守住了自己的边界，但家族的闲言碎语让你喘不过气",
+        "effects": { "self_selfEsteem": 10, "self_sensitivity": -10, "self_social": -18, "self_compliance": -25, "self_stress": 18, "sibling_selfEsteem": 5 }
       }
     ]
   },
   {
     "id": "m3",
     "stage": "中年",
-    "title": "女儿的自残",
-    "description": "你在帮15岁的女儿整理房间时，发现她的手臂上有几道划痕。你震惊、心疼、害怕。她看到你的表情，立刻把袖子拉下来，说"没什么"。",
+    "title": "女儿手臂上的伤痕",
+    "description": "15岁的女儿房间门没关好，你看到她坐在床边，手臂上有几道浅浅的划痕。她发现你在看，迅速拉下袖子说"没什么"。",
     "options": [
       {
         "id": "m3_a",
-        "text": "平静地抱住她，说我爱你，不管发生什么我们一起面对",
-        "description": "你选择先给予安全感和接纳",
-        "effects": { "self_selfEsteem": 10, "self_sensitivity": 20, "self_social": 10, "self_stress": 20, "self_compliance": -5 }
+        "text": "平静地走过去，抱住她说：我爱你，我们一起面对",
+        "description": "你给了她安全感，但女儿开始对你敞开心扉，这让你既心疼又欣慰",
+        "effects": { "self_selfEsteem": 10, "self_sensitivity": 20, "self_social": 10, "self_stress": 18, "mother_sensitivity": 8 }
       },
       {
         "id": "m3_b",
-        "text": "立刻追问她为什么要这样做，是不是有人欺负她",
-        "description": "你选择急切地寻找原因",
-        "effects": { "self_selfEsteem": -5, "self_sensitivity": -10, "self_compliance": 10, "self_stress": 35 }
+        "text": "立刻追问：是不是有人欺负你？谁伤害你了？",
+        "description": "你的急切让女儿关上了心门，说"没什么"然后锁上了房门",
+        "effects": { "self_selfEsteem": -5, "self_sensitivity": -12, "self_compliance": 8, "self_stress": 30 }
       },
       {
         "id": "m3_c",
-        "text": "假装没看见，找时间咨询心理医生",
-        "description": "你选择谨慎处理，但可能错过时机",
-        "effects": { "self_selfEsteem": 0, "self_sensitivity": 5, "self_compliance": 5, "self_stress": 25 }
+        "text": "默默记下，过几天找个合适的时机再谈",
+        "description": "你选择了等待，但那个沉默的等待期，你每天都睡不好",
+        "effects": { "self_selfEsteem": 0, "self_sensitivity": 5, "self_stress": 22 }
       },
       {
         "id": "m3_d",
-        "text": "告诉她你不能接受她伤害自己，这是不对的",
-        "description": "你选择明确表达立场，但可能让她更封闭",
-        "effects": { "self_selfEsteem": -10, "self_sensitivity": -15, "self_compliance": 15, "self_stress": 30 }
+        "text": "直接说：伤害自己是绝对不行的，这不是解决问题的方法",
+        "description": "你表达了立场，但女儿觉得你根本不懂她的感受",
+        "effects": { "self_selfEsteem": -8, "self_sensitivity": -15, "self_compliance": 15, "self_stress": 25, "mother_sensitivity": -12 }
       }
     ]
   },
   {
     "id": "e1",
     "stage": "老年",
-    "title": "养老院的选择",
-    "description": "儿子和儿媳工作忙，商量着把你送到养老院。他们说那里有人照顾，还有同龄人聊天。但你知道，他们只是不想被你"拖累"。你身体还硬朗，完全能自理。",
+    "title": "养老院的邀请",
+    "description": "儿子和儿媳商量把你送到养老院。他们说："那里有专人照顾，还有很多老人可以聊天，您不会孤单的。"你身体还好，能自己做饭，但儿子说你们年轻人工作太忙，顾不上。",
     "options": [
       {
         "id": "e1_a",
-        "text": "告诉他们你不想去，你还能照顾自己",
-        "description": "你选择坚持自己的意愿",
-        "effects": { "self_selfEsteem": 15, "self_sensitivity": 10, "self_social": 5, "self_compliance": -15, "self_stress": 5, "sibling_selfEsteem": -10 }
+        "text": "直接说：我不去，我还能照顾自己",
+        "description": "你守住了尊严，但儿子说"您怎么这么固执"",
+        "effects": { "self_selfEsteem": 15, "self_sensitivity": 8, "self_compliance": -15, "self_stress": 5, "sibling_selfEsteem": -10 }
       },
       {
         "id": "e1_b",
-        "text": "去养老院试试，不好就回来",
-        "description": "你选择给子女一个台阶，也给自己一个机会",
-        "effects": { "self_selfEsteem": -5, "self_sensitivity": -5, "self_compliance": 15, "self_stress": 15, "sibling_selfEsteem": 10 }
+        "text": "同意去试试，不合适再回来",
+        "description": "你选择了妥协。养老院里有很多老人，但你总觉得少了点什么",
+        "effects": { "self_selfEsteem": -8, "self_sensitivity": -5, "self_compliance": 15, "self_stress": 12, "sibling_selfEsteem": 10 }
       },
       {
         "id": "e1_c",
-        "text": "主动提出自己租房住，不要他们操心",
-        "description": "你选择独立，但也意味着孤独",
-        "effects": { "self_selfEsteem": 10, "self_sensitivity": 5, "self_social": -15, "self_compliance": -10, "self_stress": 10, "sibling_selfEsteem": -5 }
+        "text": "提出自己租房住，不给他们添麻烦",
+        "description": "你选择了独立，但独居的夜晚，电视的声音也填不满寂静",
+        "effects": { "self_selfEsteem": 10, "self_sensitivity": 5, "self_social": -15, "self_compliance": -10, "self_stress": 8 }
       },
       {
         "id": "e1_d",
-        "text": "沉默接受，不想让子女为难",
-        "description": "你选择牺牲自己的感受",
-        "effects": { "self_selfEsteem": -20, "self_sensitivity": -10, "self_compliance": 25, "self_stress": 25, "sibling_selfEsteem": 15 }
+        "text": "沉默接受，不想给孩子添负担",
+        "description": "你选择了隐忍，但住进养老院的那天，你偷偷哭了很久",
+        "effects": { "self_selfEsteem": -18, "self_compliance": 25, "self_stress": 20, "sibling_selfEsteem": 15 }
       }
     ]
   },
   {
     "id": "e2",
     "stage": "老年",
-    "title": "老伴走了以后",
-    "description": "相伴40年的老伴去世了。儿子说：妈，你要走出来，多出去走走。但每天早上醒来，看到空荡荡的另一半床，你只想躺着不动。已经三个月了，你连饭都懒得做。",
+    "title": "空荡荡的房间",
+    "description": "和你相伴40年的老伴走了。儿子说："妈，您要走出来，多出去走走。"但每天早上醒来，看到空荡荡的另一半床，你只想躺着不动。三个月了，你连做饭的动力都没有。",
     "options": [
       {
         "id": "e2_a",
-        "text": "尝试参加社区的老年活动",
-        "description": "你选择走出家门，重建生活",
-        "effects": { "self_selfEsteem": 10, "self_sensitivity": 8, "self_social": 15, "self_compliance": 5, "self_stress": -10 }
+        "text": "强迫自己每天出门，去公园走走",
+        "description": "你选择用行动对抗悲伤。慢慢地，你开始认识了一些老人",
+        "effects": { "self_selfEsteem": 10, "self_sensitivity": 8, "self_social": 15, "self_stress": -12 }
       },
       {
         "id": "e2_b",
-        "text": "告诉儿子你需要时间，请他理解",
-        "description": "你选择诚实表达自己的感受",
-        "effects": { "self_selfEsteem": 8, "self_sensitivity": 12, "self_social": 5, "self_compliance": -5, "self_stress": -5, "sibling_selfEsteem": -5 }
+        "text": "告诉儿子：我需要时间，请理解我",
+        "description": "儿子沉默了，但他开始每周来看你一次",
+        "effects": { "self_selfEsteem": 8, "self_sensitivity": 12, "self_social": 5, "self_stress": -8, "sibling_selfEsteem": -5 }
       },
       {
         "id": "e2_c",
-        "text": "每天给自己安排一个必须出门的理由",
-        "description": "你选择用行动对抗悲伤",
-        "effects": { "self_selfEsteem": 12, "self_compliance": 10, "self_stress": 5 }
+        "text": "把老伴的东西收起来，开始整理相册",
+        "description": "你选择了告别。那些照片让你哭了很多次，但也让你笑了很多次",
+        "effects": { "self_selfEsteem": 12, "self_sensitivity": 5, "self_stress": 5 }
       },
       {
         "id": "e2_d",
-        "text": "继续躺着，等时间慢慢过去",
-        "description": "你选择任由悲伤流淌",
-        "effects": { "self_selfEsteem": -15, "self_sensitivity": -5, "self_social": -20, "self_compliance": 5, "self_stress": 20, "sibling_selfEsteem": 5 }
+        "text": "什么都不想做，就这样躺着",
+        "description": "你任由悲伤吞噬自己。日子一天天过去，但心里那个洞越来越大",
+        "effects": { "self_selfEsteem": -15, "self_social": -20, "self_compliance": 5, "self_stress": 25, "sibling_selfEsteem": 5 }
       }
     ]
   },
   {
     "id": "e3",
     "stage": "老年",
-    "title": "智能手机的门槛",
-    "description": "医院看病要网上预约，银行办业务要扫码排队，连菜市场都开始用二维码支付。你不会用智能手机，每次都要求人帮忙。有人不耐烦，有人骗你。你觉得自己正在被这个世界抛弃。",
+    "title": "时代的墙",
+    "description": "医院要网上预约，菜市场开始用二维码收款，银行也是取号机叫号。你不会用智能手机，每次都要排队很久或者求人帮忙。有人不耐烦，有人多收你的钱。",
     "options": [
       {
         "id": "e3_a",
-        "text": "让孙子教你用，虽然他总是很不耐烦",
-        "description": "你选择学习，即使过程艰难",
-        "effects": { "self_selfEsteem": 5, "self_sensitivity": -5, "self_social": 10, "self_compliance": -5, "self_stress": 10 }
+        "text": "让孙子教我用，每次都做笔记",
+        "description": "你选择学习，虽然总是记不住，但总算会了一些基本操作",
+        "effects": { "self_selfEsteem": 8, "self_sensitivity": -3, "self_social": 10, "self_stress": 8 }
       },
       {
         "id": "e3_b",
-        "text": "参加社区举办的老年人手机培训班",
-        "description": "你选择系统学习，也认识新朋友",
-        "effects": { "self_selfEsteem": 15, "self_sensitivity": 8, "self_social": 20, "self_compliance": 5, "self_stress": -10 }
+        "text": "去社区报名老年人手机培训班",
+        "description": "你发现很多老人和你一样，在培训班里交到了新朋友",
+        "effects": { "self_selfEsteem": 15, "self_sensitivity": 8, "self_social": 20, "self_stress": -12 }
       },
       {
         "id": "e3_c",
-        "text": "尽量用现金和现场排队，不学那些新东西",
-        "description": "你选择坚持熟悉的方式",
-        "effects": { "self_selfEsteem": 5, "self_sensitivity": 5, "self_social": -10, "self_compliance": 10, "self_stress": 15 }
+        "text": "坚持用现金和排队，不为难自己",
+        "description": "你选择了坚持，但每次排队时都能感觉到年轻人的不耐烦",
+        "effects": { "self_selfEsteem": 5, "self_sensitivity": 5, "self_social": -10, "self_compliance": 10, "self_stress": 12 }
       },
       {
         "id": "e3_d",
         "text": "减少出门，能不办的事就不办了",
-        "description": "你选择退缩，放弃参与社会",
-        "effects": { "self_selfEsteem": -20, "self_sensitivity": -10, "self_social": -25, "self_compliance": 15, "self_stress": 25 }
+        "description": "你选择了退缩，但世界正在把你遗忘",
+        "effects": { "self_selfEsteem": -20, "self_social": -25, "self_compliance": 15, "self_stress": 22 }
       }
     ]
   }
